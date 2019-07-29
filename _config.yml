@@ -139,10 +139,10 @@ footer:
       icon: "fab fa-fw fa-twitter-square"
       # url:
     - label: "Facebook"
-      icon: "https://www.facebook.com/nigel.adams1"
-      # url:
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/nigel.adams1"
     - label: "GitHub"
-      icon: "Spcman"
+      icon: "fab fa-fw fa-github"
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
@@ -294,6 +294,7 @@ defaults:
       comments: # true
       share: true
       related: true
+      
   # _pages
   - scope:
     path: ""
