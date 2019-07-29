@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Getting to know Julia"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "Nigel Adams"
+description              : "A portfolio of Julia examples for newbys"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -107,10 +107,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Nigel Adams"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Data Science Enthusiast"
+  location         : "Brisbane, Australia"
   email            :
   links:
     - label: "Email"
@@ -139,10 +139,10 @@ footer:
       icon: "fab fa-fw fa-twitter-square"
       # url:
     - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+      icon: "https://www.facebook.com/nigel.adams1"
       # url:
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "Spcman"
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
@@ -294,3 +294,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+    path: ""
+    type: pages
+    values: 
+      layout: single
+      author_profile: true
