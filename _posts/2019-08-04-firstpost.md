@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: archive
 title: Up and Running! My First Post
 date: 2019-08-04
 categories: [blog]
