@@ -37,7 +37,7 @@ plot(x_rng,f.(x_rng), color="gray")
 show()
 ```
 
-![png](images/proj001/output_4_0.png)
+![png](/images/proj001/output_4_0.png)
 
 
 The Julia function below takes the inputs of our 'random' data x, y and returns a one of two trained Flux models.  The goal is to predict a fit close to the known polynomial.
@@ -103,7 +103,7 @@ legend()
 show()
 ```
 
-![png](images/proj001/output_4_0.png)
+![png](/images/proj001/output_4_0.png)
 
 ```julia
 !
