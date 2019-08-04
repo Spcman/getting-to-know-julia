@@ -5,7 +5,7 @@ date: 2019-08-04
 categories: [blog]
 tags: [Jekyll]
 header:
-  image: "/images/about.jpeg"
+  image: "/images/ai-s.jpeg"
 ---
 This website is hosted for free on [GitHub Pages with Jekyll](https://help.github.com/en/articles/about-github-pages-and-jekyll)
 
