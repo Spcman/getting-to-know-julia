@@ -8,11 +8,9 @@ header:
   image: "/images/ai-s.jpeg"
 ---
 
-
 ```julia
 using Distributions, PyPlot, Random, Flux
 ```
-
 
 ```julia
 #Display Flux Version
@@ -21,10 +19,7 @@ import Pkg ; Pkg.installed()["Flux"]
 
     v"0.7.2"
 
-
-
-Generate some data randomly distributed about the polynomial function $-0.1x^2 + 2x$
-
+Generate some data randomly distributed about the polynomial function -0.1x^2 + 2x
 
 ```julia
 f(x) = -0.1*x^2 + 2*x
@@ -42,11 +37,10 @@ plot(x_rng,f.(x_rng), color="gray")
 show()
 ```
 
+![png](images/proj001/output_4_0.png)
 
-![png](/images/proj001/output_4_0.png)
 
-
-The Julia function below takes the inputs of our 'random' data $x, y$ and returns a one of two trained Flux models.  The goal is to predict a fit close to the known polynomial.
+The Julia function below takes the inputs of our 'random' data x, y and returns a one of two trained Flux models.  The goal is to predict a fit close to the known polynomial.
 
 **Model 1** is the most trivial with one dense layer; i.e. $y = σ.(W * x .+ b)$
 
@@ -109,7 +103,7 @@ legend()
 show()
 ```
 
-![png](/images/proj001/output_4_0.png)
+![png](images/proj001/output_4_0.png)
 
 ```julia
 !
