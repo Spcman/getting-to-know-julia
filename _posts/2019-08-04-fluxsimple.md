@@ -36,7 +36,7 @@ scatter(x,y)
 plot(x_rng,f.(x_rng), color="gray")
 show()
 ```
-![alt]({{ site.url }}{{ site.baseurl }}/assets/images/proj001/output_4_0.png)
+![alt]({{ site.url }}{{ site.baseurl }}/images/proj001/output_4_0.png)
 
 The Julia function below takes the inputs of our 'random' data x, y and returns a one of two trained Flux models.  The goal is to predict a fit close to the known polynomial.
 
@@ -97,4 +97,4 @@ plot(x_rng,y_hid, label="Predictions using Hidden Layer Model")
 legend()
 show()
 ```
-![alt]({{ site.url }}{{ site.baseurl }}/assets/images/proj001/output_8_0.png)
+![alt]({{ site.url }}{{ site.baseurl }}/images/proj001/output_8_0.png)
