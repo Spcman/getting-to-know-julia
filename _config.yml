@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Nigel Adams"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/nigeladams.jpeg"
   bio              : "Data Science Enthusiast"
   location         : "Brisbane, Australia"
   email            :
@@ -127,7 +127,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/Spcman"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -143,7 +143,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/Spcman"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
