@@ -7,7 +7,9 @@ tags: [Jekyll]
 header:
   image: "/images/ai-s.jpeg"
 ---
-This website is hosted for free on [GitHub Pages with Jekyll](https://help.github.com/en/articles/about-github-pages-and-jekyll)
+Hello World!
+
+This static website is hosted for free on [GitHub Pages with Jekyll](https://help.github.com/en/articles/about-github-pages-and-jekyll)
 
 Big shout out to Michael Rose for the theme [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) and DataOptimal who made this video on how to get started and put everything together.
 
