@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: Up and Running! My First Post
+title: Up and Running! How the website was created.
 date: 2019-08-04
 categories: [blog]
 tags: [Jekyll]
@@ -11,15 +11,8 @@ Hello World!
 
 This static website is hosted for free on [GitHub Pages with Jekyll](https://help.github.com/en/articles/about-github-pages-and-jekyll)
 
+The posts and pages are markdown files (.md) which makes them quick to edit.  The super cool thing is that can save your Notebooks as markdown files from Jupyter and the output file only requires a small amount of editing to make it look good on Jekyll website. 
+
 Big shout out to Michael Rose for the theme [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) and DataOptimal who made this video on how to get started and put everything together.
 
 {% include video id="qWrcgHwSG8M" provider="youtube" %}
-
-{% for category in site.categories %}
-  <h3>{{ category[0] }}</h3>
-  <ul>
-    {% for post in category[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endfor %}
