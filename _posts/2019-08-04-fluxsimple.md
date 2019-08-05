@@ -20,7 +20,7 @@ import Pkg ; Pkg.installed()["Flux"]
 
     v"0.7.2"
 
-Generate some data randomly distributed about the polynomial function $-0.1x^2 + 2x$
+Generate some data randomly distributed about the polynomial function $$-0.1x^2 + 2x$$
 
 ```julia
 f(x) = -0.1*x^2 + 2*x
