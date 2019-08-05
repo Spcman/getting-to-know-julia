@@ -20,7 +20,7 @@ import Pkg ; Pkg.installed()["Flux"]
 
     v"0.7.2"
 
-Generate some data randomly distributed about the polynomial function $$-0.1x^2 + 2x$$
+Generate some data randomly distributed about the polynomial function $-0.1x^2 + 2x$
 
 ```julia
 f(x) = -0.1*x^2 + 2*x
@@ -39,9 +39,9 @@ show()
 ```
 ![alt]({{ site.url }}{{ site.baseurl }}/images/proj001/output_4_0.png)
 
-The Julia function below takes the inputs of our 'random' data $$x, y$$ and returns a one of two trained Flux models.  The goal is to predict a fit close to the known polynomial f(x).
+The Julia function below takes the inputs of our 'random' data $x, y$ and returns a one of two trained Flux models.  The goal is to predict a fit close to the known polynomial f(x).
 
-**Model 1** is the most trivial with one dense layer; i.e. $$y = σ.(W * x .+ b)$$
+**Model 1** is the most trivial with one dense layer; i.e. $y = σ.(W * x .+ b)$
 
 **Model 2** has 1 hidden layer with a definable amount of neurons for experimentation
 
