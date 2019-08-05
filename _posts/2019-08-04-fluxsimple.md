@@ -37,11 +37,11 @@ scatter(x,y)
 plot(x_rng,f.(x_rng), color="gray")
 show()
 ```
-![alt]({{ site.url }}{{ site.baseurl }}/images/proj001/output_4_0.png)
+![output]({{ site.url }}{{ site.baseurl }}/images/proj001/output_4_0.png)
 
-The Julia function below takes the inputs of our 'random' data $x, y$ and returns a one of two trained Flux models.  The goal is to predict a fit close to the known polynomial f(x).
+The Julia function below takes the inputs of our 'random' data $$x, y$$ and returns a one of two trained Flux models.  The goal is to predict a fit close to the known polynomial f(x).
 
-**Model 1** is the most trivial with one dense layer; i.e. $y = σ.(W * x .+ b)$
+**Model 1** is the most trivial with one dense layer; i.e. $$y = σ.(W * x .+ b)$$
 
 **Model 2** has 1 hidden layer with a definable amount of neurons for experimentation
 
@@ -74,7 +74,9 @@ function train_model(x, y, hl_neurons=0)
     return m
 end
 ```
-Make predictions and plot against our source data
+Make predictions and plot against our source data.  Note, in the example I included 10 neurons.
+
+![Neural Network 1-10-1]({{ site.url }}{{ site.baseurl }}/images/proj001/nn_1_10_1.png)
 
 ```julia
 model=train_model(x, y)
@@ -98,6 +100,6 @@ plot(x_rng,y_hid, label="Predictions using Hidden Layer Model")
 legend()
 show()
 ```
-![alt]({{ site.url }}{{ site.baseurl }}/images/proj001/output_8_0.png)
+![output]({{ site.url }}{{ site.baseurl }}/images/proj001/output_8_0.png)
 
-The introduction of the hidden layer approximates our function well!
+The introduction of the hidden layer approximates our function well! Apparently, a one layer neural network can approximate any continuous function. I might put together some more examples another day.
