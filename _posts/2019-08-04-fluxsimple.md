@@ -2,7 +2,7 @@
 layout: archive
 title: Julia Flux Simple Regression Model
 date: 2019-08-04
-categories: [blog]
+categories: [flux]
 tags: [flux, linear, polynomial, quadratic, simple]
 header:
   image: "/images/ai-s.jpeg"
