@@ -13,7 +13,7 @@ Accordigng to Wikipedia "Word embedding is the collective name for a set of lang
 
 It is word vectors that make technologies such as speech recognition and machine translation possible.  The algorithms to create them come from the likes of Google's (Word2Vec), Facebook (FastText) and Stanford University's (GloVe).  For this notebook we will use a pre-trained embedding file built using GloVe.  
 
-You'll see the embedding file I use is ``glove.6B.50d.tx``. This file can be downloaded from [GloVe]( https://nlp.stanford.edu/projects/glove/) and needs to be in the current working folder for this example.
+You'll see the embedding file I use is ``glove.6B.50d.txt``. This file can be downloaded from [GloVe]( https://nlp.stanford.edu/projects/glove/) and needs to be in the current working folder for this example.
 
 The ideas explored below come from a brilliant GitHub Post [Understanding word vectors
 ... for, like, actual poets. By Allison Parrish](https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469). This was a Python notebook and I have basically re-written it in Julia. Very little credit goes to me!
@@ -50,8 +50,6 @@ function load_embeddings(embedding_file)
     return reduce(hcat, LL), indexed_words
 end
 ```
-
-    load_embeddings (generic function with 1 method)
 
 The function above takes the input of the embeddings filename and returns two arrays: -
 
@@ -120,11 +118,11 @@ vec("cheese")
       0.68161 
       0.066202
 
-It’s pretty difficult to imagine words in a 50 dimensional space so let’s have a think about how these vectors might look in 2 dimensions.
+It’s pretty difficult to imagine words in a 50 dimensional space so let’s have a think about how some word vectors might look in 2 dimensions.
 
 ![word vectors]({{ site.url }}{{ site.baseurl }}/images/proj002/word-vectors.png)
 
-The words that are closer together have a similar meaning or context. Using the distances between word vectors things get interesting. Let’s define a function to do this using the cosine distance between two word vectors and then test it out.
+The words that are closer together have a similar meaning or context. Using the distances between word vectors things get interesting. Let’s define a function to do this using the cosine distance between two word vectors and then test it out (back to 50 dimensions!)
 
 ```julia
 cosine(x,y)=1-cosine_dist(x, y)
@@ -309,9 +307,6 @@ closest(vec("man") - vec("woman") + vec("queen"))
 
 King = Magic!
 
-```julia
-word_plot(["man", "woman", "queen", "king"])
-```
 ![man woman queen king]({{ site.url }}{{ site.baseurl }}/images/proj002/man-woman-queen-king.png)
 
 
