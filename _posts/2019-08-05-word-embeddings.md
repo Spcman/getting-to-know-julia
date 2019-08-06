@@ -8,18 +8,17 @@ excerpt: Maths on words, word similarity, sentence similarity ... and Dracula?
 header:
   image: "/images/ai-s.jpeg"
 ---
-This notebook delves into Natural Language Processing (NLP) and more specifically Word Embeddings.
 
 Accordigng to Wikipedia "Word embedding is the collective name for a set of language modeling and feature learning techniques in natural language processing (NLP) where words or phrases from the vocabulary are mapped to vectors of real numbers".  
 
-It is word vectors that make technologies such as speech recognition and machine translation possible.  The algorithms to create them come from the likes of Google's (Word2Vec), Facebook (FastText) and Stanford University's (GloVe).  For this notebook we will use pre-trained data using GloVe.  
+It is word vectors that make technologies such as speech recognition and machine translation possible.  The algorithms to create them come from the likes of Google's (Word2Vec), Facebook (FastText) and Stanford University's (GloVe).  For this notebook we will use a pre-trained embedding file built using GloVe.  
 
-You'll see the embedding file I use is "glove.6B.50d.txt". This file can be downloaded from [GloVe]( https://nlp.stanford.edu/projects/glove/)and needs to be in the current working folder.
+You'll see the embedding file I use is ``glove.6B.50d.tx``. This file can be downloaded from [GloVe]( https://nlp.stanford.edu/projects/glove/) and needs to be in the current working folder for this example.
 
 The ideas explored below come from a brilliant GitHub Post [Understanding word vectors
-... for, like, actual poets. By Allison Parrish](https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469). This was a Pyhton Notebook and I have basically re-written it in Julia. Very little credit goes to me!
+... for, like, actual poets. By Allison Parrish](https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469). This was a Python notebook and I have basically re-written it in Julia. Very little credit goes to me!
 
-Let's begin by loading the libraries we will need.
+Let's begin by loading the packages we will need.
 
 ```julia
 using Distances, Statistics
@@ -56,8 +55,9 @@ end
 
 The function above takes the input of the embeddings filename and returns two arrays: -
 
-**embeddings** – A Float32 Array, each row represents one word as an d dimensional vector
-**vocab** – A string array of all the words
++ **embeddings** – A Float32 Array, each row represents one word as an d dimensional vector
+
++ **vocab** – A string array of all the words
 
 ```julia
 embeddings, vocab = load_embeddings("glove.6B.50d.txt")
@@ -71,7 +71,7 @@ Lost?  Don’t worry hang in there! Let’s see what in these arrays by way of s
 
 ## Functions we'll need
 
-The function vec_idx returns the index position of a given word in the vocab. We can see that “cheese” is the 5796th word.
+The function ``vec_idx`` returns the index position of a given word in the vocab. We can see that “cheese” is the 5796th word.
 
 ```julia
 vec_idx(s) = findfirst(x -> x==s, vocab)
@@ -80,7 +80,7 @@ vec_idx("cheese")
 
     5796
 
-The function vec returns the word vector of the given word.  Below is the vector for the word “cheese”. 
+The function ``vec`` returns the word vector of the given word.  Below is the vector for the word “cheese”. 
 
 ```julia
 function vec(s) 
@@ -276,7 +276,7 @@ closest(blue_to_sky + vec("grass"))
      "soft"    
      "chestnut"
 
-
+Green is there at the top!
 
 ### Man - Woman + Queen
 
@@ -307,6 +307,7 @@ closest(vec("man") - vec("woman") + vec("queen"))
      "dragon"    
      "named"     
 
+King = Magic!
 
 ```julia
 word_plot(["man", "woman", "queen", "king"])
@@ -316,7 +317,7 @@ word_plot(["man", "woman", "queen", "king"])
 
 ## Sentence Similarity with Dracula
 
-Load the book Dracular by Bram Stoker from this website as plain text  https://www.gutenberg.org/ebooks/345
+Load the book Dracular by Bram Stoker from this website as plain text - [https://www.gutenberg.org/ebooks/345](https://www.gutenberg.org/ebooks/345)
 
 
 ```julia
@@ -329,9 +330,7 @@ println("Loaded Dracula, length=$(length(txt)) characters")
     Loaded Dracula, length=883114 characters
 
 
-The next cell tidies up the book's data by removing characters that are not alpha-numeric.
-
-It then splits the text up into an array of sentences.
+The next cell tidies up the book's data by removing characters that are not alpha-numeric and splits the text up into an array of sentences.
 
 
 ```julia
@@ -366,7 +365,7 @@ Ouput of sentences 1000 to 1010
      "that is slang again but never mind arthur says that every day"                                                              
 
 
-This next function takes the vectors of each word in the array and finds the mean vector of the whole sentence.
+This next function ``sentvec`` takes the vectors of each word in the array and finds the mean vector of the whole sentence.
 
 ```julia
 function sentvec(s) 
@@ -423,10 +422,7 @@ sentvec(100)
      -0.49725753  
 
 
-The following cell works out the sentence vectror for every sentence in the book.  This can take about 10 mins to run as it's running vector computions on every sentence and word. 
-
-
-This function returns the n nearest sentences without any pretraining.
+This function returns the n nearest sentences (without any pretraining).
 
 
 ```julia
@@ -464,10 +460,9 @@ end
      "i had for breakfast more paprika and a sort of porridge of maize flour which they said was mamaliga and egg-plant stuffed with forcemeat a very excellent dish which they call impletata"                                                
      "for a little bit her breast heaved softly and her breath came and went like a tired child's"                                                                                                                                             
 
-It's interesting to see the sentences returned - they mostly do seem similar.
+It's interesting to see the sentences returned - they are indeed mostly similar.
 
-As the sentence similrity function is slow to run I created a pre-trained array of all the sentences and there corresponding word vectors
-Code to find and save the pre-trained data.
+As the sentence similarity function is slow to run I created a pre-trained array of all the sentences and the corresponding word vector.
 
 ```julia
 drac_sent_vecs=[]
@@ -476,7 +471,7 @@ for s in 1:length(sentences)
 end
 ```
 
-Save to a file (to save the training step).
+Save data to files (to save doing the training step next time).
 
 ```julia
 writedlm( "drac_sent_vec.csv",  drac_sent_vecs, ',')
@@ -486,15 +481,12 @@ writedlm( "drac_sent_vec.csv",  drac_sent_vecs, ',')
 writedlm( "drac_sentences.csv",  sentences, ',')
 ```
 
-Open the file.
+Open the files
 
 ```julia
 sentences=readdlm("drac_sentences.csv", '!', String, header=false)
 drac_sent_vecs=readdlm("drac_sent_vec.csv", ',', Float32, header=false)
 ```
-
-
-
 
     8093×50 Array{Float32,2}:
        0.395886     0.136462     0.0393325   …   -0.00172208   -0.094155  
