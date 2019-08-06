@@ -4,6 +4,7 @@ title: Up and Running! How the website was created
 date: 2019-08-04
 categories: [website]
 tags: [Jekyll, github]
+excerpt: Hello World! My first post and how I created this site
 header:
   image: "/images/ai-s.jpeg"
 ---
@@ -16,3 +17,5 @@ The posts and pages are markdown files (.md) which makes them quick to compose. 
 Big shout out to Michael Rose for the theme [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) and DataOptimal who made this video on how to get started and put everything together.
 
 {% include video id="qWrcgHwSG8M" provider="youtube" %}
+
+To get the math equations looking good I use [MathJax](https://www.mathjax.org/) in the markdown.

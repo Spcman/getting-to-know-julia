@@ -4,11 +4,10 @@ title: Julia Flux Simple Regression Model
 date: 2019-08-04
 categories: [flux]
 tags: [flux, linear, polynomial, quadratic, simple]
+excerpt: Overkill - but a simple introduction to Flux
 header:
   image: "/images/ai-s.jpeg"
 ---
-Overkill - but a nice introduction to Flux
-
 ```julia
 using Distributions, PyPlot, Random, Flux
 ```
@@ -41,7 +40,7 @@ show()
 
 The Julia function below takes the inputs of our 'random' data $$x, y$$ and returns a one of two trained Flux models.  The goal is to predict a fit close to the known polynomial f(x).
 
-**Model 1** is the most trivial with one dense layer; i.e. $$y = σ.(W * x .+ b)$$
+**Model 1** is the most trivial with one dense input; i.e. $$y = σ.(W * x .+ b)$$
 
 **Model 2** has 1 hidden layer with a definable amount of neurons for experimentation
 
