@@ -10,7 +10,7 @@ header:
   image: "/images/ai-s.jpeg"
 ---
 
-Accordigng to Wikipedia "Word embedding is the collective name for a set of language modeling and feature learning techniques in natural language processing (NLP) where words or phrases from the vocabulary are mapped to vectors of real numbers".  
+According to Wikipedia "Word embedding is the collective name for a set of language modeling and feature learning techniques in natural language processing (NLP) where words or phrases from the vocabulary are mapped to vectors of real numbers".  
 
 It is word vectors that make technologies such as speech recognition and machine translation possible.  The algorithms to create them come from the likes of Google's (Word2Vec), Facebook's (FastText) and Stanford University's (GloVe).  For this notebook we will use a pre-trained embedding file built using GloVe.  
 
