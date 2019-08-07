@@ -2,6 +2,7 @@
 layout: archive
 title: Up and Running! How the website was created
 date: 2019-08-04
+comments: true
 categories: [website]
 tags: [Jekyll, github]
 excerpt: Hello World! My first post and how I created this site
@@ -19,11 +20,3 @@ Big shout out to Michael Rose for the theme [Minimal Mistakes](https://mmistakes
 {% include video id="qWrcgHwSG8M" provider="youtube" %}
 
 To get the math equations looking good I use [MathJax](https://www.mathjax.org/) in the markdown.
-
-<script src="https://utteranc.es/client.js"
-        repo="getting-to-know-julia"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

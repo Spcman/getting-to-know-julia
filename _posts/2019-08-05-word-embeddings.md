@@ -3,6 +3,7 @@ layout: archive
 title: Julia Word Embedding with Dracula
 date: 2019-08-05
 categories: [NLP]
+comments: true
 tags: [TextAnalysis, GloVe, embeddings]
 excerpt: Maths on words, word similarity, sentence similarity ... and Dracula?
 header:
@@ -11,7 +12,7 @@ header:
 
 Accordigng to Wikipedia "Word embedding is the collective name for a set of language modeling and feature learning techniques in natural language processing (NLP) where words or phrases from the vocabulary are mapped to vectors of real numbers".  
 
-It is word vectors that make technologies such as speech recognition and machine translation possible.  The algorithms to create them come from the likes of Google's (Word2Vec), Facebook (FastText) and Stanford University's (GloVe).  For this notebook we will use a pre-trained embedding file built using GloVe.  
+It is word vectors that make technologies such as speech recognition and machine translation possible.  The algorithms to create them come from the likes of Google's (Word2Vec), Facebook's (FastText) and Stanford University's (GloVe).  For this notebook we will use a pre-trained embedding file built using GloVe.  
 
 You'll see the embedding file I use is ``glove.6B.50d.txt``. This file can be downloaded from [GloVe]( https://nlp.stanford.edu/projects/glove/) and needs to be in the current working folder for this example.
 

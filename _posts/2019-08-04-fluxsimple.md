@@ -2,6 +2,7 @@
 layout: archive
 title: Julia Flux Simple Regression Model
 date: 2019-08-04
+comments: true
 categories: [flux]
 tags: [flux, linear, polynomial, quadratic, simple]
 excerpt: Overkill - but a simple introduction to Flux
