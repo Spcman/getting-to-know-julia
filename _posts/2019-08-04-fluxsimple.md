@@ -103,3 +103,11 @@ show()
 ![output]({{ site.url }}{{ site.baseurl }}/images/proj001/output_8_0.png)
 
 The introduction of the hidden layer approximates our function well! Apparently, a one layer neural network can approximate any continuous function. I might put together some more examples another day.
+
+<script src="https://utteranc.es/client.js"
+        repo="spcman/getting-to-know-julia"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>

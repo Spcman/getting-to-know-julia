@@ -554,3 +554,10 @@ closest_sent_pretrained(drac_sent_vecs, "i walked into a door")
      "i could see easily for we did not leave the room in darkness she had placed a warning hand over my mouth and now she whispered in my ear:-- hush there is someone in the corridor i got up softly and crossing the room gently opened the door"
      "i have to be away till the afternoon so sleep well and dream well with a courteous bow he opened for me himself the door to the octagonal room and i entered my bedroom"                                                                       
 
+<script src="https://utteranc.es/client.js"
+        repo="spcman/getting-to-know-julia"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
