@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: Julia Word Embeddings with Dracula
+title: Julia Word Embedding with Dracula
 date: 2019-08-05
 categories: [NLP]
 tags: [TextAnalysis, GloVe, embeddings]
@@ -16,7 +16,7 @@ It is word vectors that make technologies such as speech recognition and machine
 You'll see the embedding file I use is ``glove.6B.50d.txt``. This file can be downloaded from [GloVe]( https://nlp.stanford.edu/projects/glove/) and needs to be in the current working folder for this example.
 
 The ideas explored below come from a brilliant GitHub Post [Understanding word vectors
-... for, like, actual poets. By Allison Parrish](https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469). This was a Python notebook and I have basically re-written it in Julia. Very little credit goes to me!
+... for, like, actual poets. By Allison Parrish](https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469). This was a Python notebook and I have basically re-written part of it in Julia. Very little credit goes to me!
 
 Let's begin by loading the packages we will need.
 
@@ -30,7 +30,7 @@ using DelimitedFiles
 ```
 ## Load the Embeddings
 
-There is a Julia package to load the embedding’s with one or two lines of code called [Embeddings.jl]( https://github.com/JuliaText/Embeddings.jl) but I couldn’t get the package to install. I figured out the code to load the embeddings by delving into the repository.
+There is a Julia package to load the embeddings with one or two lines of code called [Embeddings.jl]( https://github.com/JuliaText/Embeddings.jl) but I couldn’t get the package to install. I figured out the code to load the embeddings by delving into the repository.
 
 ```julia
 function load_embeddings(embedding_file)
@@ -430,7 +430,7 @@ end
 ```
 
 ```julia
-#closest_sent("my favorite food is strawberry ice cream")
+closest_sent("my favorite food is strawberry ice cream")
 ```
 
     20-element Array{String,1}:
@@ -457,7 +457,7 @@ end
 
 It's interesting to see the sentences returned - they are indeed mostly similar.
 
-As the sentence similarity function is slow to run I created a pre-trained array of all the sentences and the corresponding word vector.
+As the sentence similarity function is slow to run I created a pre-trained array of all the sentences and the corresponding word vectors.
 
 ```julia
 drac_sent_vecs=[]
@@ -523,7 +523,7 @@ function closest_sent_pretrained(pretrained_arr, input_str, n=20)
 end
 ```
 
-Test it out.
+Test it out and the results are instant this time.
 
 
 ```julia
