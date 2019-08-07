@@ -20,3 +20,11 @@ Big shout out to Michael Rose for the theme [Minimal Mistakes](https://mmistakes
 {% include video id="qWrcgHwSG8M" provider="youtube" %}
 
 To get the math equations looking good I use [MathJax](https://www.mathjax.org/) in the markdown.
+
+<script src="https://utteranc.es/client.js"
+        repo="spcman/getting-to-know-julia"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
