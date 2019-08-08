@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: posts
 title: Julia Word Embedding with Dracula
 date: 2019-08-05
 categories: [NLP]
@@ -14,7 +14,7 @@ According to Wikipedia "Word embedding is the collective name for a set of langu
 
 It is word vectors that make technologies such as speech recognition and machine translation possible.  The algorithms to create them come from the likes of Google's (Word2Vec), Facebook's (FastText) and Stanford University's (GloVe).  For this notebook we will use a pre-trained embedding file built using GloVe.  
 
-You'll see the embedding file I use is ``glove.6B.50d.txt``. This file can be downloaded from [GloVe]( https://nlp.stanford.edu/projects/glove/) and needs to be in the current working folder for this example.
+The embedding file I used below is ``glove.6B.50d.txt``. This file can be downloaded from [GloVe]( https://nlp.stanford.edu/projects/glove/) and needs to be in the current working folder for this example.
 
 The ideas explored below come from a brilliant GitHub Post [Understanding word vectors
 ... for, like, actual poets. By Allison Parrish](https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469). This was a Python notebook and I have basically re-written part of it in Julia. Very little credit goes to me!
@@ -554,10 +554,3 @@ closest_sent_pretrained(drac_sent_vecs, "i walked into a door")
      "i could see easily for we did not leave the room in darkness she had placed a warning hand over my mouth and now she whispered in my ear:-- hush there is someone in the corridor i got up softly and crossing the room gently opened the door"
      "i have to be away till the afternoon so sleep well and dream well with a courteous bow he opened for me himself the door to the octagonal room and i entered my bedroom"                                                                       
 
-<script src="https://utteranc.es/client.js"
-        repo="spcman/getting-to-know-julia"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
