@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: single
 title: Julia Flux Simple Regression Model
 date: 2019-08-04
 comments: true
@@ -106,15 +106,8 @@ show()
 ```
 ![output]({{ site.url }}{{ site.baseurl }}/images/proj001/output_8_0.png)
 
-The introduction of the hidden layer approximates our function well! Apparently, a one layer neural network can approximate any continuous function. I might put together some examples of this another day.
+The introduction of the hidden layer approximates our function well! Apparently, a one layer neural network can approximate any continuous function. I might put this to the test another day.
 
 The trained parameters of the model can be obtained with ``Flux.params(model)``.  For the 10-neuron model you end up with 10 sets of parameters for the trained weights and biases. You cannot approximate the original polynomial co-efficients of f(x) as such. 
 
-<script src="https://utteranc.es/client.js"
-        repo="spcman/getting-to-know-julia"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>
 
