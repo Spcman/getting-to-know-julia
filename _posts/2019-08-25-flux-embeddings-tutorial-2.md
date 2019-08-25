@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Julia Word GloVe Embedding Layer in Flux
+title: Julia Word Embedding Layer in Flux - Pre-trained GloVe
 date: 2019-08-25
 categories: [NLP]
 comments: true
@@ -10,7 +10,7 @@ header:
   image: "/images/ai-s.jpeg"
 ---
 
-This example follows on from [tutorial #1](https://spcman.github.io/getting-to-know-julia/nlp/flux-embeddings-tutorial-1/) in which we trained our own embedding layer.  This time we use pre-trained word vectors (GloVe) instead of learning them.  We’ll skip over some of the explanations as this is covered in tutorial 1.
+This example follows on from [tutorial #1](https://spcman.github.io/getting-to-know-julia/nlp/flux-embeddings-tutorial-1/) in which we trained our own embedding layer.  This time we use pre-trained word vectors (GloVe) instead of learning them.  We’ll skip over some of the explanations as this is covered in tutorial #1.
 
 As before, the objective for this exercise is to machine learn the sentiment of 10 string arrays.  The idea came from this [tutorial written by Jason Brownlee](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/) who used Keras on a similar dataset.
 
@@ -24,7 +24,9 @@ import Pkg ; Pkg.installed()["Flux"]
 
     v"0.7.2"
 
-This code block is the same as tutorial 1. See this for more explanation.
+## Data Preparation
+
+This code block is the same as [tutorial #1](https://spcman.github.io/getting-to-know-julia/nlp/flux-embeddings-tutorial-1/). See this for more explanation.
 
 ```julia
 Arr = ["well done",
@@ -99,8 +101,8 @@ function load_embeddings(embedding_file)
 end
 ```
 
-We’ll use one of the smaller embedding files (glove.6B.50d.txt) as this problem is trivial.
-
+We’ll use one of the smaller embedding files (glove.6B.50d.txt) as this problem is trivial.  This file can be downloaded [from here](https://nlp.stanford.edu/projects/glove/) and must reside in the current working folder.
+  
 ```julia
 embeddings, vocab = load_embeddings("glove.6B.50d.txt")
 embed_size, max_features = size(embeddings)
@@ -109,7 +111,7 @@ println("Loaded embeddings, each word is represented by a vector with $embed_siz
 
     Loaded embeddings, each word is represented by a vector with 50 features. The vocab size is 400000
 
-This function provides the index of the word in embedding.
+This function provides the index of a word in the GloVe embedding.
 
 ```julia
 #Function to return the index of the word in the embedding (returns 0 if the word is not found)
@@ -118,7 +120,7 @@ function vec_idx(s)
     i==nothing ? i=0 : i 
 end
 ```
-This function provides the word vector of the given word. 
+This function provides the GloVe word vector of the given word. 
 
 ```julia
 wvec(s) = embeddings[:, vec_idx(s)]
@@ -167,7 +169,7 @@ The next block of code initializes a random embedding matrix as per the size of 
 ```julia
 embedding_matrix=Flux.glorot_normal(max_features, vocab_size)
 ```
-Now we overwrite the random embedding matrix with our word vectors from GloVe. The word vectors are inserted as columns as per the index from word_dict.  After this has run any missing words in the will retain their random values and should not adversely affect the training.
+Now we overwrite the random embedding matrix with our word vectors from GloVe. The word vectors are inserted as columns as per the index from word_dict.  After this has run any missing words will retain their random values and should not adversely affect the training.
 
 
 ```julia
@@ -190,13 +192,13 @@ m = Chain(x -> embedding_matrix * Flux.onehotbatch(reshape(x, pad_size*N), 0:voc
 
 The model (m) needs some explanation. 
 
-**Layer 1.**  The first layer’s embedding function matches the words in each document to corresponding word vectors.  This is done by rolling all the word vectors one after the other and using onehotbatch to filter out the unwanted words.  The output is a 8x40 array.
+**Layer 1.**  The first layer’s embedding function matches the words in each document to corresponding word vectors.  This is done by rolling all the word vectors one after the other and using onehotbatch to filter out the unwanted words.  The output is a 50x40 array.
 
-**Layer 2**. Unrolls the vectors into the shape 8x4x10; i.e. 8 features and 10 documents of padded size 4. 
+**Layer 2**. Unrolls the vectors into the shape 50x4x10; i.e. 8 features and 10 documents of padded size 4. 
 
-**Layer  3.** Now that our data is in the shape provided by layer 2 we can sum the word vectors to get an overall ‘meaning’ vector for each document. The output is now in the shape size of 8 x 1 x 10.
+**Layer  3.** Now that our data is in the shape provided by layer 2 we can sum the word vectors to get an overall ‘meaning’ vector for each document. The output is now in the shape size of 50 x 1 x 10.
 
-**Layer 4:** Drops the axis (1) so that the shape of x is a size suitable for training. After this step the shape is 8x10.
+**Layer 4:** Drops the axis (1) so that the shape of x is a size suitable for training. After this step the shape is 50x10.
 
 **Layer 5:** is a normal Dense layer with the sigmoid activation function to give us nice probabilities.
 
