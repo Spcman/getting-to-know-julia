@@ -11,11 +11,13 @@ header:
 
 [Julia Computing Home Page](https://juliacomputing.com/)
 
+[Get up and running instantly with JuliaBox](https://www.juliabox.com/)
+
 [Julia Official Documentation](https://docs.julialang.org) > Best resource for all the essential language building blocks
 
 [Introducing Julia - Wikibooks](https://en.wikibooks.org/wiki/Introducing_Julia)
 
-[Get up and running instantly with JuliaBox](https://www.juliabox.com/)
+[Julia by Example](https://juliabyexample.helpmanual.io/)
 
 ## Machine Learning
 [Flux](https://fluxml.ai/Flux.jl/stable/)
