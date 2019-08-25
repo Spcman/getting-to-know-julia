@@ -132,13 +132,13 @@ end
 
 The model needs some explanation. 
 
-**Layer 1.**  As ``x`` is fed into the model, the first layer’s embedding function matches the words in each document to corresponding word vectors.  This is done by rolling all the word vectors one after the other and using onehotbatch to filter out the unwanted words.  The output is a 8x40 array.
+**Layer 1.**  As x is fed into the model, the first layer’s embedding function matches the words in each document to corresponding word vectors.  This is done by rolling all the word vectors one after the other and using onehotbatch to filter out the unwanted words.  The output is a 8x40 array.
 
 **Layer 2**. Unrolls the vectors into the shape 8x4x10; i.e. 8 features and 10 documents of padded size 4. 
 
 **Layer  3.** Now that our data is in the shape provided by layer 2 we can sum the word vectors to get an overall ‘meaning’ vector for each document. The output is now in the shape size of 8 x 1 x 10.
 
-**Layer 4:** Drops the axis (1) so that the shape of x is a size suitable for training. After this step the shape is 8x10.
+**Layer 4:** Drops an axis so that the shape of x is a size suitable for training. After this step the shape is 8x10.
 
 **Layer 5:** is a normal Dense layer with the sigmoid activation function to give us nice probabilities.
 
@@ -209,4 +209,4 @@ plot(accuracy_train, label="train")
 
 ![loss accuracy]({{ site.url }}{{ site.baseurl }}/images/proj003/output_26_0.png)
 
-Note, I think some parts of this could be done more elegantly, let me know if anything could be improved.
+Note, some parts of this could be done more elegantly, let me know.
