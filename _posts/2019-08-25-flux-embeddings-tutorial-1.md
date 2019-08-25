@@ -9,9 +9,9 @@ excerpt: A gentle and simple example of word embedding with Flux
 header:
   image: "/images/ai-s.jpeg"
 ---
-In this example we take a look at how to use an embedding layer in Julia with Flux. If you need help on what embeddings are check out this page and then return here to see how we can use them as the first layer in a neural network.
+In this example we take a look at how to use an embedding layer in Julia with Flux. If you need help on what embeddings are check out [this page](https://spcman.github.io/getting-to-know-julia/nlp/word-embeddings/) and then return here to see how we can use them as the first layer in a neural network.
 
-The objective for this exercise is to machine learn the sentiment of 10 string arrays.  The idea came from this tutorial written by Jason Brownlee who used Keras on a similar dataset.
+The objective for this exercise is to machine learn the sentiment of 10 string arrays.  The idea came from this [tutorial written by Jason Brownlee](https://machinelearningmastery.com/use-word-embedding-layers-deep-learning-keras/) who used Keras on a similar dataset.
 
 ```julia
 using  Languages, TextAnalysis, Flux, PyPlot, Statistics
@@ -41,7 +41,7 @@ Arr = ["well done",
 y = [true true true true true false false false false false]
 ```
 
-Next we set up a dictionary of words used. Each word points to an integer index.  To do this the TextAnalysis package was used. If you're interested in how this works watch this video.
+Next we set up a dictionary of words used. Each word points to an integer index.  To do this the TextAnalysis package was used. If you're interested in how this works watch [this video](https://www.youtube.com/watch?v=f7RNuOLDyM8&t=4838s).
 
 ```julia
 docs=[]
@@ -132,7 +132,7 @@ end
 
 The model needs some explanation. 
 
-**Layer 1.**  As x is fed into the model, the first layer’s embedding function matches the words in each document to corresponding word vectors.  This is done by rolling all the word vectors one after the other and using onehotbatch to filter out the unwanted words.  The output is a 8x40 array.
+**Layer 1.**  As ``x`` is fed into the model, the first layer’s embedding function matches the words in each document to corresponding word vectors.  This is done by rolling all the word vectors one after the other and using onehotbatch to filter out the unwanted words.  The output is a 8x40 array.
 
 **Layer 2**. Unrolls the vectors into the shape 8x4x10; i.e. 8 features and 10 documents of padded size 4. 
 
@@ -142,7 +142,7 @@ The model needs some explanation.
 
 **Layer 5:** is a normal Dense layer with the sigmoid activation function to give us nice probabilities.
 
-If you’d like to see each layer in action I recommend using m[1](x) to see sample output from the first layer.  m[1:2](x) to see output from the second layer and so on.
+If you’d like to see each layer in action I recommend using ``m[1](x)`` to see sample output from the first layer.  ``m[1:2](x)`` to see output from the second layer and so on.
 
 ```julia
 m = Chain(EmbeddingLayer(max_features, vocab_size),
