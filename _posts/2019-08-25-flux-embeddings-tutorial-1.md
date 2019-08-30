@@ -105,6 +105,18 @@ x = padded_docs'
 data = [(x, y)]
 ```
 
+```
+x
+```
+
+```
+  0   0  0   0  0   0   0   0   0  2
+  0   0  0   0  0   0   0   0   0  8
+ 13   6  7   9  0   0  11  10  11  3
+  3  14  4  14  5  12   4   6  14  1
+```
+
+
 ## Flux Embedding Preparation
 
 Next let’s get ready for the embedding layer. In this example we’ll learn 8 features per word but for a larger corpus you’ll probably need a higher dimension, perhaps even 300.  The vocab size is set to 20 which is higher than the maximum index in our dictionary.
