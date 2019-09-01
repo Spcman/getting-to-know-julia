@@ -165,7 +165,7 @@ The first layer can be broken down as follows: -
 
 ``(3,3)`` is the convolution filter size (3x3) that will slide over the image detecting new features.
 
- ``1=>16`` is the network input and output size.  The input size is 1 recalling that is 1 batch of size 28x28x1x128.  The output size is 16 meaning we’ll create 16 new feature matrices for every training digit in the batch.  
+ ``1=>16`` is the network input and output size.  The input size is 1 recalling that 1 batch is of size 28x28x1x128.  The output size is 16 meaning we’ll create 16 new feature matrices for every training digit in the batch.  
 
 ``pad=(1,1)`` This pads a single layer of zeros around the images meaning that the dimensions of the convolution output can remain at 28x28.
 
@@ -178,9 +178,9 @@ The output from this layer only can be viewed with ``model[1](train_set[1][1])``
 
 ``x -> maxpool(x, (2,2)),``
 
-Convolutional layers are generally followed by A maxpool layer.  In our case the parameter ``(2,2)`` is the window size that slides over x reducing it to half the size whilst retaining the most important feature information for learning.
+Convolutional layers are generally followed by a maxpool layer.  In our case the parameter ``(2,2)`` is the window size that slides over x reducing it to half the size whilst retaining the most important feature information for learning.
 
-+The output from this layer only can be viewed with ``model[1:2](train_set[1][1])`` and has the output dimensions 14×14×16×128.
+The output from this layer only can be viewed with ``model[1:2](train_set[1][1])`` and has the output dimensions 14×14×16×128.
 
 ### Layer 3
 
@@ -224,7 +224,9 @@ The output from this layer only can be viewed with ``model[1:7](train_set[1][1])
 
 ``Dense(288, 10),``
 
-Our final training layer takes the input of 288 and outputs a size of 10x128
+Our final training layer takes the input of 288 and outputs a size of 10x128. 
+
+(10 for 10 digits 0-9)
 
 ### Layer 9
 
