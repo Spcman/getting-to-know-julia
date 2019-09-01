@@ -14,7 +14,7 @@ In this blog post we’ll breakdown the convolutional neural network (CNN) demo 
 
 The objective is to train a CNN to recognize hand-written digits using the famous MNIST dataset.
 
-If you are new to CNN's I recommend watching all these videos to gain the concepts needed to understand this post. Note, some of the videos dive into Kera’s coding but it’s actually very comparable to Flux.
+If you are new to CNN's I recommend watching all the videos below to obtain the concepts needed to understand this post. Note, some of the videos dive into Kera’s coding but it’s actually very comparable to Flux.
 
 [Convolutional Neural Networks (CNNs) explained](https://www.youtube.com/watch?v=YRhxdVk_sIs)
 
@@ -165,7 +165,7 @@ The first layer can be broken down as follows: -
 
 ``(3,3)`` is the convolution filter size (3x3) that will slide over the image detecting new features.
 
- ``1=>16`` is the network input and output size.  The input size is 1 recalling that one batch is of size 28x28x1x128.  The output size is 16 meaning we’ll create 16 new feature matrices for every training digit in the batch.  
+ ``1=>16`` is the network input and output size.  The input size is 1 recalling that one batch is of size 28x28x1x128.  The output size is 16 meaning we’ll create 16 new channels for every training digit in the batch.  
 
 ``pad=(1,1)`` This pads a single layer of zeros around the images meaning that the dimensions of the convolution output can remain at 28x28.
 
