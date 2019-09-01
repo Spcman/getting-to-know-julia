@@ -12,7 +12,7 @@ header:
 
 In this blog post we’ll breakdown the convolutional neural network (CNN) demo given in the [Flux Model Zoo](https://github.com/FluxML/model-zoo/blob/master/vision/mnist/conv.jl).  We'll pay most attention to the CNN model build-up and will skip over some of the data preparation and training code. 
 
-The objective is to train a CNN to recognize hand-written digits using the famous MNIST dataset.  As the coding comments in the model zoo assume a fair bit of prior knowledge, I thought I’d add in more explanation and insight for beginners. Hopefully you will find it useful.
+The objective is to train a CNN to recognize hand-written digits using the famous MNIST dataset.
 
 If you are new to CNN's I recommend watching all these videos to gain the concepts needed to understand this post. Note, some of the videos dive into Kera’s coding but it’s actually very comparable to Flux.
 
