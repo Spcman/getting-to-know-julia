@@ -101,7 +101,7 @@ size(train_set[1][2]) # OneHotVector labels
 
     (10, 128)
 
-Each OneHot vector in the batch encodes the labelled digit; i.e. whether it is 1 through to 10.  You can see the first OneHotVector in the first batch with the following.
+Each OneHotVector in the batch encodes the labelled digit; i.e. whether it is 1 through to 10.  You can see the first OneHotVector in the first batch with the following code.
 
 ```julia
 train_set[1][2][:,1]
@@ -125,7 +125,7 @@ train_set[1][2][:,1]
 
 ## Flux CNN Model Explained
 
-Here's the next block of code from the model zoo that we're mostly interested with: -
+Here's the next block of code from the model zoo that we're mostly interested in: -
 
 
 ```julia
