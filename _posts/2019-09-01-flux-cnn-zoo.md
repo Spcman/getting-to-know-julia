@@ -10,7 +10,7 @@ header:
   image: "/images/ai-s.jpeg"
 ---
 
-In this blog post we’ll breakdown the convolutional neural network (CNN) demo given in the [Flux Model Zoo](https://github.com/FluxML/model-zoo/blob/master/vision/mnist/conv.jl).  We'll pay most attention to the CNN model build-up and will skip over some of the data preparation and learning code. 
+In this blog post we’ll breakdown the convolutional neural network (CNN) demo given in the [Flux Model Zoo](https://github.com/FluxML/model-zoo/blob/master/vision/mnist/conv.jl).  We'll pay most attention to the CNN model build-up and will skip over some of the data preparation and training code. 
 
 The objective is to train a CNN to recognize hand-written digits using the famous MNIST dataset.  As the coding comments in the model zoo assume a fair bit of prior knowledge, I thought I’d add in more explanation and insight for beginners. Hopefully you will find it useful.
 
@@ -125,7 +125,7 @@ train_set[1][2][:,1]
 
 ## Flux CNN Model Explained
 
-Here's the next block of code from the model zoo: -
+Here's the next block of code from the model zoo that we're mostly interested with: -
 
 
 ```julia
@@ -165,7 +165,7 @@ The first layer can be broken down as follows: -
 
 ``(3,3)`` is the convolution filter size (3x3) that will slide over the image detecting new features.
 
- ``1=>16`` is the network input and output size.  The input size is 1 recalling that 1 batch is of size 28x28x1x128.  The output size is 16 meaning we’ll create 16 new feature matrices for every training digit in the batch.  
+ ``1=>16`` is the network input and output size.  The input size is 1 recalling that one batch is of size 28x28x1x128.  The output size is 16 meaning we’ll create 16 new feature matrices for every training digit in the batch.  
 
 ``pad=(1,1)`` This pads a single layer of zeros around the images meaning that the dimensions of the convolution output can remain at 28x28.
 
