@@ -169,13 +169,13 @@ The next block of code initializes a random embedding matrix as per the size of 
 ```julia
 embedding_matrix=Flux.glorot_normal(max_features, vocab_size)
 ```
-Now we overwrite the random embedding matrix with our word vectors from GloVe. The word vectors are inserted as columns as per the index from word_dict.  After this has run any missing words will retain their random values and should not adversely affect the training.
+Now we overwrite the random embedding matrix with our word vectors from GloVe. The word vectors are inserted as columns as per the index from word_dict plus 1.  The reason we add 1 is so that 0 can represent a zero-word that has been padded.
 
 
 ```julia
 for term in doc_term_matrix.terms
     if vec_idx(term)!=0
-        embedding_matrix[:,word_dict[term]]=wvec(term)
+        embedding_matrix[:,word_dict[term]+1]=wvec(term)
     end
 end   
 ```
@@ -215,7 +215,7 @@ As this is a binary (1 or 0) classification problem we need to use binarycrossen
 
 ```julia
 loss(x, y) = sum(Flux.binarycrossentropy.(m(x), y))
-optimizer = Flux.Descent(0.01)
+optimizer = Flux.Descent(0.001)
 ```
 
 Train the model
