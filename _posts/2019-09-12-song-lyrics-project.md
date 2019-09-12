@@ -955,7 +955,8 @@ triple o'shays when there was love      I want you back   But I can't grab that 
 star, bad boy   Come on, let's go      [Mj]   When I had you to myself   I didn't want you around   Those pretty faces   Always 
 made you   Stand out in a crowd   But someone picked you from the bunch   When love was all it took   Now it's much too late for
 me   To take a second look      Oh baby, give me one more chance   (To show you that I love you)   Won't you please let me   (Back 
-in your heart)   Oh, darlin' I was blind to let you go   (Let you go baby)   But now since I see you in his arms   (I want you back)   Oh, I do now   (I want you back)   Oh, oh, baby   (I want you back)   Yeah, yeah, yeah, yeah   (I want you back)   Nah, 
+in your heart)   Oh, darlin' I was blind to let you go   (Let you go baby)   But now since I see you in his arms   (I want you back) 
+Oh, I do now   (I want you back)   Oh, oh, baby   (I want you back)   Yeah, yeah, yeah, yeah   (I want you back)   Nah, 
 nah, nah, nah      Trying to live without your love   Is one long sleepless night   Let me show you girl   That I know wrong 
 from right   Every street you walk on   I lay tear stains on the ground   Following the girl   I didn't even want you 
 around      Let me tell ya now   Oh baby all I need is one more chance   (To show you that I love you)   Won't you please let 
@@ -964,7 +965,8 @@ want you back)      [Black Rob]   It's just like Jermain Jackson   Tito, Mike an
 stardom   Blowin' the F-up   My game's stepped up   'Member when Mike and them   First came to record   Singin' hits like 
 Skywriter   My Girl, People Make The World Go 'Round   Mama's Pearl, Can't Loose it   Joyful jukebox music   Never Can Say
 Goodbye   That's why we use it      It's money honey   So I gots to be there   And I'm be yo Sugar Daddy   Say it's real  
-Versachi chair, pd, life of the party   Bad Boy, make joys for everbody      Jackson 5 Chorus in background while: [Puff Daddy] From the old to the new   Come on   Motown   Rock on   Yeah, yeah, yeah, yeah   [Jackson 5 Chorus until fade]
+Versachi chair, pd, life of the party   Bad Boy, make joys for everbody      Jackson 5 Chorus in background while: [Puff Daddy]
+From the old to the new   Come on   Motown   Rock on   Yeah, yeah, yeah, yeah   [Jackson 5 Chorus until fade]
 ```
 
 #### Pause and think!  Here is the answer.
