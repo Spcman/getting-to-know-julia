@@ -15,6 +15,8 @@ My friend introduced me to the Julia programming language at the start of 2019 a
 >Julia combines the ease of use of quantitative environments such as Python and R with the speed of production programming languages such as C++ and Java. Julia can be 10-100x faster than its cohorts.
 >> [Julia Computing](https://juliacomputing.com/domains/)
 
+[What is ML](https://spcman.github.io/getting-to-know-julia/what-is-machine-learning/)
+
 ## Disclaimer
 
 Any information provided on this website is accurate to the best of my knowledge, but there may be omissions, errors or mistakes.
