@@ -33,7 +33,7 @@ Like it or not AI is going to have more and more impact on our daily lives. Many
 
 AI has proved ‘better’ than human intelligence at a number of tasks most famously at the game of Go - Move 37.
 
-{% include video id="vI9BllT7ovg&t=190s" provider="youtube" %}
+{% include video id="vI9BllT7ovg" provider="youtube" %}
 
 Although AI can already be ‘better’ than humans at a number of tasks it is still limited to the individual tasks that it has been trained to do.  Artificial General Intelligence is a term used to describe a machine that has the capacity to learn any intellectual task that a human can do. When invented this will be the tipping point of something really big! It’s anticipated that such a machine would quickly learn to be more intelligent that humans having a status of ‘superintelligent’. It’s something that troubles many scientists as there is no limit on intelligence and what that that might mean.  Nobody knows how far this is actually away but it could less than 60 years away.
 
