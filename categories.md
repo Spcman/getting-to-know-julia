@@ -1,7 +1,6 @@
 ---
-layout: page
-permalink: /categories/
 title: Categories
+permalink: /categories/
 header:
   image: "/images/ai-s.jpeg"
 ---
