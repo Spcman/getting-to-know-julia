@@ -2,7 +2,7 @@
 layout: single
 title: Julia Word Embedding Layer in Flux - Self Trained
 date: 2019-08-25
-categories: [Deep Learning, NLP]
+categories: [Deep-learning, NLP]
 comments: true
 excerpt: A simple example of a word embedding layer with Flux (not pre-trained)
 header:

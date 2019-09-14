@@ -2,7 +2,7 @@
 layout: single
 title: Julia Project - Song Lyric Text Classification by Artist
 date: 2019-09-12
-categories: [Deep Learning, NLP]
+categories: [Deep-learning, NLP]
 comments: true
 excerpt: Can we predict the artist of the song given the lyrics?
 header:
