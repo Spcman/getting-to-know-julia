@@ -2,7 +2,7 @@
 layout: single
 title: Julia Flux Convolutional Neural Network Explained
 date: 2019-09-01
-categories: [Deep-Learning, Vision]
+categories: [Deep-learning, Vision]
 comments: true
 excerpt: Taming the CNN vision example in the Flux Model Zoo
 header:
