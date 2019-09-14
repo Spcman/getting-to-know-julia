@@ -4,7 +4,6 @@ title: Julia Project - Song Lyric Text Classification by Artist
 date: 2019-09-12
 categories: [Deep Learning, NLP]
 comments: true
-tags: [TextAnalysis, Flux, embeddings]
 excerpt: Can we predict the artist of the song given the lyrics?
 header:
   image: "/images/ai-s.jpeg"
