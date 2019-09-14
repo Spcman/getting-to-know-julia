@@ -3,8 +3,6 @@ layout: single
 title: Up and Running! How the website was created
 date: 2019-08-04
 comments: true
-categories: [website]
-tags: [Jekyll, github]
 excerpt: Hello World! My first post and how I created this site
 header:
   image: "/images/ai-s.jpeg"

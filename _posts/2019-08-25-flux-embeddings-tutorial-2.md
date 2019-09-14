@@ -2,9 +2,8 @@
 layout: single
 title: Julia Word Embedding Layer in Flux - Pre-trained GloVe
 date: 2019-08-25
-categories: [NLP]
+categories: [Deep Learning, NLP]
 comments: true
-tags: [TextAnalysis, Flux, embeddings]
 excerpt: A simple example of a pre-trained word embedding layer (GloVe) with Julia and Flux
 header:
   image: "/images/ai-s.jpeg"

@@ -4,7 +4,6 @@ title: Julia Word Embedding with Dracula
 date: 2019-08-05
 categories: [NLP]
 comments: true
-tags: [TextAnalysis, GloVe, embeddings]
 excerpt: Maths on words, word similarity, sentence similarity ... and Dracula?
 header:
   image: "/images/ai-s.jpeg"
