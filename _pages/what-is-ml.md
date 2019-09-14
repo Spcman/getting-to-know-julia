@@ -31,11 +31,11 @@ This example show’s an AI assistant booking an appointment and having a ‘rea
 
 Like it or not AI is going to have more and more impact on our daily lives. Many respected thinkers liken the changes to a second industrial revolution. This time, however, the white-collar and professional workers will also be affected.  In the medical industry we’re already seeing that AI is better than humans a detecting cancer from images. It’s likely that more general medical diagnosis will be better via AI in the not too distant future.  Self-driving cars are already here and will become more mainstream affecting thousands of human driver jobs.  The legal sector is also likely to be affected as tasks done by say paralegals will soon be done really well using AI too … and this is just the start.
 
-AI has proved ‘better’ than human intelligence at a number of tasks most famously at the game of Go - Move 37.
+AI has proved ‘better’ than human intelligence at a number of tasks most famously at the game of Go.  The story behind Move 37 is quite fascinating.
 
 {% include video id="vI9BllT7ovg" provider="youtube" %}
 
-Although AI can already be ‘better’ than humans at a number of tasks it is still limited to the individual tasks that it has been trained to do.  Artificial General Intelligence is a term used to describe a machine that has the capacity to learn any intellectual task that a human can do. When invented this will be the tipping point of something really big! It’s anticipated that such a machine would quickly learn to be more intelligent that humans having a status of ‘superintelligent’. It’s something that troubles many scientists as there is no limit on intelligence and what that that might mean.  Nobody knows how far this is actually away but it could less than 60 years away.
+Although AI can already be ‘better’ than humans at a number of tasks it is still limited to the individual tasks that it has been trained to do.  Artificial General Intelligence is a term used to describe a machine that has the capacity to learn any intellectual task that a human can do. When invented this will be the tipping point of something really big! It’s anticipated that such a machine would quickly learn to be more intelligent that humans having a status of ‘superintelligent’. It’s something that troubles many scientists as there is no limit on intelligence and what that that might mean.  Nobody knows how far this is actually away but it could less than 60 years away....
 
 ## The dark side of AI
 
@@ -45,11 +45,11 @@ AI has a dark side - things that are possible now!
 
 ## If we’re not writing task ‘rules’ in code anymore machine learning is quick and easy right?
 
-Unfortunately, this is not true, well at least not yet!
+Unfortunately, not quite, well at least not yet!
 
 Getting the models to work requires a fair bit of skill and experimentation. As a machine learning practitioner you really need to be able to write code to run ‘experiments’.  You’ll ideally need to have a good grasp of math too; in particular the areas of linear algebra, statistics and calculus.  There are also many algorithms, terms, languages, libraries to choose from and to know how to use properly. If you have an idea for a machine learning project sometimes data may also become a barrier.  Accurate models generally need many training data examples to learn the task.  For most applications you’ll need over a 1000 labelled examples in a data set for a decent prediction accuracy.
 
-But learning IA is certainly doable and once you get started it’s a real positive addiction to see what you can learn and do!
+But learning AI is certainly doable and once you get started it’s a real positive addiction to see what you can learn and do!
 
 About the math! Don’t be put off by this, you can get started and build pretty amazing models without knowing much math at all.  If the math puts you off try FASTAI top-to-down learning approach.  Get into the math when you’re ready.
 

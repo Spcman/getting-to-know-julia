@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Julia Project - Song Lyric Artist Predictor
+title: Julia Project - Song Lyric Text Classification by Artist
 date: 2019-09-12
 categories: [Deep Learning, NLP]
 comments: true
@@ -9,9 +9,6 @@ excerpt: Can we predict the artist of the song given the lyrics?
 header:
   image: "/images/ai-s.jpeg"
 ---
-
-# Project - Song Lyric Text Classification by Artist
-
 I had an idea for a work-related project I’d like to do some day given the opportunity.  The objective would be to build a machine learning model that can classify notes or documents for compliance purposes.  To get such a project off the ground sufficient labelled training data would be needed. There isn’t going to be the luxury of trained data like the famous IMDb data set which contains 50,000 labelled movie reviews.  The data we would obtain would likely be less than 1000 rows (at least to start with).  
 
 So I went on a search for trained text data sets and somehow ended up with this [Song Lyric dataset from Kaggle]( https://www.kaggle.com/mousehead/songlyrics).  I thought it would be a fun challenge to pick 5 popular artists who had made many songs and try to build a model that could predict the artist who sung the song with test data unseen by the training step.  The filtered dataset used for training is less than 800 rows making it kind of comparable to the work-related project I had in mind.
@@ -911,13 +908,13 @@ BSON.@load "artist_conv.bson" m
 ```
 
 ## Conclusion
-We were so close to 70% accuracy. With a little more perseverance I think we could have got there.  The steps I had in mind to improve accuracy were 
+The model nearly got to 70% accuracy. With a little more perseverance I think I could have got there.  The steps I had in mind to improve accuracy were 
 
 + Study and make updates to the out of vocabulary words.
 
 + Data augmentation and balance of training examples
 
-I might come back to this another day.
+I might come back to this another day....
 
 
 ```julia
@@ -994,8 +991,6 @@ Although this one was labelled ‘Michael Jackson’ it was in the dataset as a 
 
 The confusion matrix shows where the model predictions were correct (the diagonal) and where they failed (the other cells).
 
-A deeper blue means more certainty.
-
 
 ```julia
 using MLBase
@@ -1027,7 +1022,7 @@ xlabel("Actual")
 ylabel("Prediction")
 show()
 ```
-
+A deeper blue means more certainty.
 
 ![song artist confusion chart]({{ site.url }}{{ site.baseurl }}/images/proj004/output_92_0.png)
 
