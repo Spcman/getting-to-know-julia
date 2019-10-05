@@ -6,7 +6,7 @@ header:
 ---
 Machine Learning is subset of the field of Artificial Intelligence where computer systems are used to perform a specific task without given explicit instructions.  
 
->The main concept to grasp with machine learning you don’t define the rules, instead you give the machine learning algorithms lots of examples and it learns how to do the task on it’s own.
+>The main concept to grasp with machine learning is you don’t define the rules, instead you give the machine learning algorithms lots of examples and it learns how to do the task on it’s own.
 
 Here’s a picture to help explain where machine learning lies with relation to other terms you’ve possibly heard of.
 
