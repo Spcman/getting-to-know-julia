@@ -53,7 +53,7 @@ These videos are not restricted to World leaders, soon someone could be imperson
 
 Unfortunately, not quite, well at least not yet!
 
-Getting the models to work requires a fair bit of skill and experimentation. As a machine learning practitioner you really need to be able to write code to run ‘experiments’.  You’ll ideally need to have a good grasp of math too; in particular the areas of linear algebra, statistics, pobability and calculus.  There are also many algorithms, terms, languages, libraries to choose from and to know how to use properly. If you have an idea for a machine learning project sometimes data may also become a barrier.  Accurate models generally need many training data examples to learn the task.  For most applications you’ll need over a 500 labelled examples in a data set for a decent prediction accuracy.
+Getting the models to work requires a fair bit of skill and experimentation. As a machine learning practitioner you really need to be able to write code to run ‘experiments’.  You’ll ideally need to have a good grasp of math too; in particular the areas of linear algebra, statistics, pobability and calculus.  There are also many algorithms, terms, languages, libraries to choose from and to know how to use properly. If you have an idea for a machine learning project sometimes data may also become a barrier.  Accurate models generally need many training data examples to learn the task.  For most applications you generally need over 500 labelled examples in a data set for a decent prediction accuracy.
 
 ...But learning AI is certainly doable and once you get started it’s a real positive addiction to see what you can learn and do!
 
