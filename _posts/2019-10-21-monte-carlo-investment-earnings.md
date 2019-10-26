@@ -36,8 +36,6 @@ df=CSV.read("/mnt/juliabox/Monte Carlo/assumptions.csv")
 
 A risk profile is an evaluation of an individual's willingness and ability to take risks. Financial Advisers often fit client’s into one of several risk profiles after asking them discovery questions.  The risk profile names and values above have been made up but they are indicative of real values.  The first risk profile ‘Defensive’ is made up from 15% growth assets and 85% defensive assets; this risk profile would suit a cautious investor who wants to make steady progress without taking too much risk. At the other end of the table a ‘Very Aggressive’ risk profile is made up from 100% growth assets and would suit an individual who is more willing to take a risk to gain higher returns.
 
-Users of the financial software XPLAN will recognise headings used in this dataframe. We only actually need the data from ‘Total’ being the overall expected growth (Growth + Income) and ‘StdDev’ which is the risk profile’s standard deviation.
-
 The function below plots a normal distribution curve of a given risk profile.
 
 
@@ -128,7 +126,7 @@ deterministic_predict(original_principle_sum, interest_rate(1), 12, 20)
 
 By using the Moneysmart [Compound Interest Calculator](https://www.moneysmart.gov.au/tools-and-resources/calculators-and-apps/compound-interest-calculator) as a second sanity check we can see our deterministic function is working.
 
-![money smart]({{ site.url }}{{ site.baseurl }}/images/proj005/moneysmart.png)
+![money smart]({{ site.url }}{{ site.baseurl }}/images/proj005/moneysmart.PNG)
 
 ## Stochastic Prediction Function
 
@@ -242,7 +240,7 @@ for rp in 1:length(df)
 end
 ```
 
-By running many simulations (grey lines) we can take the mean and quantiles each of each day's simulations and after a while we start to see deterministic predictions emerging. The area between green and blue can be interpreted as ‘good’ market conditions.  The area between the blue and the red would be ‘bad’ market conditions.
+By running many simulations (see grey lines below) we can take the mean and quantiles each of each day's simulations and after a while we start to see deterministic predictions emerging. The area between green and blue can be interpreted as ‘good’ market conditions.  The area between the blue and the red would be ‘bad’ market conditions.
 
 
 ```julia
