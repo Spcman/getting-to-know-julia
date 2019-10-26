@@ -154,7 +154,7 @@ These gifs were generated with the functions below.  Let’s take a closer look 
 age=40 #                                 Age at start of projections
 frequency = 252 #                        Assume 252 trading days per year
 days = 1/frequency #                     Convenient way to express days
-yrs_to_days(x)=x*frequency #             Simple function to convert the time-delta to years
+yrs_to_days(x)=x*frequency #             Simple function to convert years to days
 sigma(rp) = df[rp,:].StdDev/100 #        Simple function to get a risk profile's standard deviation
 ```
 
@@ -217,7 +217,7 @@ function montecarlo(rp, N, iterations, show_Q)
 end
 ```
 
-The following code was used to produced a sequence of PNG image files that I later used to create the animated gifs above.  I used a free app for the Mac called [PicGIF lite](https://apps.apple.com/au/app/picgif-lite/id844918735?mt=12) to generate the final animated gifs.
+The following code was used to produce a sequence of PNG image files that I later used to create the animated gifs above.  I used a free app for the Mac called [PicGIF lite](https://apps.apple.com/au/app/picgif-lite/id844918735?mt=12) to generate the final animated gifs.
 
 
 ```julia
