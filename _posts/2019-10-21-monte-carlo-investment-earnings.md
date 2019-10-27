@@ -4,7 +4,7 @@ title: Julia Project - Monte Carlo Simulation for Investment Portfolio Earnings
 date: 2019-09-12
 categories: [Monte Carlo]
 comments: true
-excerpt: A look a Monte Carlo with Geometric Brownian motion (GBM)
+excerpt: A look at Monte Carlo with Geometric Brownian motion (GBM)
 header:
   image: "/images/ai-s.jpeg"
 ---
