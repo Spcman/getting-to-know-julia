@@ -42,8 +42,7 @@ Not my work but there is now a trained machine learning model that can be used t
 
 ### Recommendation Systems 
 
-Ever wondered how Google, Amazon and Netflix seem to know what you might want to buy or watch next.  All of these companies use machine learning to work out what you’re likely to want to do based on your prior buying, search and watching history.
-Part of the reason these tech giants were (and are still) so successful is down to their investment in machine learning research, but *machine learning can be used in any sized business right now.*
+Ever wondered how Google, Amazon and Netflix seem to know what you might want to buy or watch next.  All of these companies use machine learning to work out what you’re likely to want based on your prior buying, search and watching history. Part of the reason these tech giants were (and still are) so successful is down to their investment in machine learning research, but **machine learning can be used in any sized business right now.**
 
 ### Tabular Data
 
@@ -73,7 +72,7 @@ The backbone of AI is basically math. Specifically, Calculus, Linear Algebra, Pr
 
 ![output]({{ site.url }}{{ site.baseurl }}/images/mnist-digit-8.png)
 
-The next step is to choose a machine learning algorithm and train the model.  Neural Networks or Deep Learning is one of the most common techniques used.
+The next step is to choose a machine learning algorithm and train the model.  A Neural Network (Deep Learning) is one of the most common techniques used.
 
 As the model trains it is basically nudging weights and biases around to minimise the error (or loss).  This video demonstrates the learning process in a Neural Network.
 
@@ -83,11 +82,11 @@ Despite the complexity under the hood Python libraries such as Google’s Tensor
 
 ## Text Data (Natural Language Processing)
 
-We haven’t yet looked at text data.  Computers are great at storing text data but they don’t ‘understand’ it as such.  This is starting to change. We can now relatively easily train machine learning models to recognize the sentiment of text.  Probably the most famous dataset used by newbies is the IMDB movie reviews dataset. This dataset is contains over 50,000 reviews. Each review has been manually labelled as a positive or negative review. If we train a machine learning model of this data we can take a new review and work out if it is positive or negative.
+We haven’t yet looked at text data.  Computers are great at storing text data but they don’t ‘understand’ it as such.  This is starting to change. We can now relatively easily train machine learning models to recognize the sentiment of text.  Probably the most famous dataset used by newbies is the IMDB movie reviews dataset. This dataset is contains over 50,000 reviews. Each review has been manually labelled as a positive or negative review. If we train a machine learning model on this data we can take a new review and work out if it is positive or negative.
 
-The [Tensor Flow embedding projector](https://projector.tensorflow.org/) is a cool way to introduce the concept of Word Embeddings. After training a model on the IMDB data set we can visually see how the model has determined what workd might lean towards positive and those that might lean towards negative.
+The [Tensor Flow embedding projector](https://projector.tensorflow.org/) is a cool way to introduce the concept of Word Embeddings. After training a model on the IMDB data set we can visually see how the model has determined what words might lean towards positive and those that might lean towards negative.
 
-Pre-trained word embeddings can greatly improve the accuracy of text based machine learning problems are freely available to use from Google (Word2Vec), Facebook (FASText) and Stanford University (GloVe). I wrote a ‘fun’ article called [Word Embedding with Dracula](https://spcman.github.io/getting-to-know-julia/nlp/word-embeddings/) on my blog.
+Pre-trained word embeddings can greatly improve the accuracy of text based machine learning problems are freely available to use from Google (Word2Vec), Facebook (fastText) and Stanford University (GloVe). I wrote a ‘fun’ article called [Word Embedding with Dracula](https://spcman.github.io/getting-to-know-julia/nlp/word-embeddings/) on my blog.
 
 Other example using text data are SPAM detectors and the automatic detection of social media posts to see if they are abusive in some way or not.
 
@@ -117,20 +116,8 @@ Aside from the obvious ‘Terminator’ scenario, deep fakes videos are relative
 
 These videos are not restricted to World leaders, soon someone could be impersonating you!
 
-## Machine learning must be easy?
-
-Unfortunately, not quite, well at least not yet!
-
-Getting the models to work requires a fair bit of skill and experimentation. As a machine learning practitioner you really need to be able to write code to run ‘experiments’.  You’ll ideally need to have a good grasp of math too; in particular the areas of linear algebra, statistics, pobability and calculus.  There are also many algorithms, terms, languages, libraries to choose from and to know how to use properly. If you have an idea for a machine learning project sometimes data may also become a barrier.  Accurate models generally need many training data examples to learn the task.  For most applications you generally need over 500 labelled examples in a data set for a decent prediction accuracy.
-
-...But learning AI is certainly doable and once you get started it’s a real positive addiction to see what you can learn and do!
-
-About the math! Don’t be put off by this, you can get started and build pretty amazing models without knowing much math at all.  Start at the top and work down to the math later if you like.
-
 ## Machine Learning in my business
 
 I recently stumbled on this talk by Andrew Ng.  I did his brilliant course on Machine Learning a while ago.  He explains how now may be the time to try out some use-cases in your own business.
 
 {% include video id="j2nGxw8sKYU" provider="youtube" %}
-
-
