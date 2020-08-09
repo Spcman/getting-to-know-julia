@@ -118,10 +118,10 @@ Aside from the obvious ‘Terminator’ scenario, deep fakes videos are relative
 
 {% include video id="gLoI9hAX9dw" provider="youtube" %}
 
-These videos are not restricted to World leaders, soon someone could be impersonating you!
-
 ## Machine Learning in my business
 
 I recently stumbled on this talk by Andrew Ng.  I did his brilliant course on Machine Learning a while ago.  He explains how now may be the time to try out some use-cases in your own business.
 
 {% include video id="j2nGxw8sKYU" provider="youtube" %}
+
+1.17min
