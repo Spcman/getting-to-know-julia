@@ -82,7 +82,7 @@ Despite the complexity under the hood Python libraries such as Google’s Tensor
 
 ## Text Data (Natural Language Processing)
 
-We haven’t yet looked at text data.  Computers are great at storing text data but they don’t ‘understand’ it as such.  This is starting to change. We can now relatively easily train machine learning models to recognize the sentiment of text.  Probably the most famous dataset used by newbies is the IMDB movie reviews dataset. This dataset is contains over 50,000 reviews. Each review has been manually labelled as a positive or negative review. If we train a machine learning model on this data we can take a new review and work out if it is positive or negative.
+We haven’t yet looked at text data.  Computers are great at storing text data but they don’t ‘understand’ it as such.  This is starting to change. We can now relatively easily train machine learning models to recognize the sentiment of text.  Probably the most famous dataset used by newbies is the IMDB movie reviews dataset. This dataset contains over 50,000 reviews. Each review has been manually labelled as a positive or negative review. If we train a machine learning model on this data we can take a new review and work out if it is positive or negative.
 
 The [Tensor Flow embedding projector](https://projector.tensorflow.org/) is a cool way to introduce the concept of Word Embeddings. After training a model on the IMDB data set we can visually see how the model has determined what words might lean towards positive and those that might lean towards negative.
 
@@ -90,13 +90,13 @@ Pre-trained word embeddings can greatly improve the accuracy of text based machi
 
 Other example using text data are SPAM detectors and the automatic detection of social media posts to see if they are abusive in some way or not.
 
-Work related projects
+## Work related projects
 
-*Project 1 : Can we use the subject and note text to predict the correct note type and sub type of notes not seen in the training process?* 
+**Project 1 : Can we use the subject and note text to predict the correct note type and sub type of notes not seen in the training process?**
 
 Data is real but has been anonymized.
 
-*[Project 2](https://spcman.github.io/getting-to-know-julia/monte%20carlo/monte-carlo-investment-earnings/): The second work related note book was written in Julia. It’s not machine learning such, but more a look at monte-carlo simulation on portfolios using risk profiles similar to ours.*
+**[Project 2](https://spcman.github.io/getting-to-know-julia/monte%20carlo/monte-carlo-investment-earnings/): The second work related note book was written in Julia. It’s not machine learning such, but more a look at monte-carlo simulation on portfolios using risk profiles similar to ours.**
 
 ## Where are we heading?
 
@@ -105,6 +105,10 @@ Like it or not AI is going to have more and more impact on our daily lives. Resp
 AI has proved ‘better’ than human intelligence at a number of tasks most famously at the game of Go.  The story behind Move 37 is quite fascinating.
 
 {% include video id="vI9BllT7ovg" provider="youtube" %}
+
+You can see the entire documentary here
+
+{% include video id="WXuK6gekU1Y" provider="youtube" %}
 
 Although AI can already be ‘better’ than humans at a number of tasks it is still limited to the individual tasks that it has been trained to do.  Artificial General Intelligence (AGI) is a term used to describe a machine that has the capacity to learn any intellectual task that a human can do. When invented this will be the tipping point of something really big! It’s anticipated that such a machine would quickly learn to be more intelligent that humans having a status of ‘superintelligent’. It’s something that troubles many scientists as there is no limit on intelligence and what that that might mean.  Nobody knows how far this is actually away but it could less than 60 years away....
 
