@@ -86,9 +86,9 @@ We haven’t yet looked at text data.  Computers are great at storing text data 
 
 The [Tensor Flow embedding projector](https://projector.tensorflow.org/) is a cool way to introduce the concept of Word Embeddings. After training a model on the IMDB data set we can visually see how the model has determined what words might lean towards positive and those that might lean towards negative.
 
-Pre-trained word embeddings can greatly improve the accuracy of text based machine learning problems are freely available to use from Google (Word2Vec), Facebook (fastText) and Stanford University (GloVe). I wrote a ‘fun’ article called [Word Embedding with Dracula](https://spcman.github.io/getting-to-know-julia/nlp/word-embeddings/) on my blog.
+Pre-trained word embeddings can greatly improve the accuracy of text based machine learning models. There are ones freely available to use from Google (Word2Vec), Facebook (fastText) and Stanford University (GloVe). I wrote a ‘fun’ article called [Word Embedding with Dracula](https://spcman.github.io/getting-to-know-julia/nlp/word-embeddings/) on my blog.
 
-Other example using text data are SPAM detectors and the automatic detection of social media posts to see if they are abusive in some way or not.
+Other example using text data are Spam detectors, chat bots and the automatic detection of social media posts to see if they are abusive in some way or not.
 
 ## Work related projects
 
