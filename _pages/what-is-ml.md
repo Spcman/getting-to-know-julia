@@ -22,7 +22,7 @@ There’s no need to worry about these for now, you’ll pick them up if you cho
 
 Machine learning is currently limited to fairly narrow tasks. Here are a few applications of machine learning.
 
-###Vision
+### Vision
 
 Not that long ago some scientists thought a computer could never distinguish images of cats from dogs and now this is considered pretty trivial. With YOLO you can detect multiple objects in real-time.
 
@@ -30,22 +30,22 @@ Not that long ago some scientists thought a computer could never distinguish ima
 
 Other vision machine learning examples are facial recognition, medical diagnosis, self-driving cars, inspecting sites from drones, law enforcement (Clearview AI), 
 
-###Audio
+### Audio
 
-Perhaps the most obvious example of audio machine learning is speech recognition. All major commercial speech recognition applications use deep learning; Apple Siri, Alexa, Google Assistant.
+Perhaps the most obvious example of audio machine learning is speech recognition. All major commercial digital assistants use deep learning; Apple Siri, Amazon Alexa, Google Assistant.
 
-This example show’s an AI assistant booking an appointment and having a ‘real’ conversation.
+This example show’s an AI assistant (Google Duplex) booking an appointment and having a ‘real’ conversation.
 
 {% include video id="lXUQ-DdSDoE" provider="youtube" %}
 
-Not my work but there is now a trained machine learning model that can be used to take any song as an mp3 and split it into two new audio files, one being the instrumental and the other being the vocals.  The model can be used for free in my preferred development tool Google Colab. 
+Not my work but there is now a trained machine learning model that can be used to take any song as an mp3 and split it into two new audio files, one being the instrumental and the other being the vocals.  The model can be used for free in my preferred development environment Google Colab. 
 
-###Recommendation Systems 
+### Recommendation Systems 
 
 Ever wondered how Google, Amazon and Netflix seem to know what you might want to buy or watch next.  All of these companies use machine learning to work out what you’re likely to want to do based on your prior buying, search and watching history.
 Part of the reason these tech giants were (and are still) so successful is down to their investment in machine learning research, but *machine learning can be used in any sized business right now.*
 
-###Tabular Data
+### Tabular Data
 
 Tabular data is basically spreadsheet data.  To build a machine learning model from tabular data you need data that might look something like the arrangement below. It’s possible to learn from many different data types, both numeric and categorical.  The dependant variable is the outcome you’re trying to learn. In this case policy_lapse is 1 if the insurance policy lapses otherwise it is 0.
 
@@ -57,9 +57,7 @@ The outcome will be a mathematical ‘model’ that can make new predictions bas
 
 ![output]({{ site.url }}{{ site.baseurl }}/images/tabular-model-new-prediction.png)
 
-A good tabular dataset for a beginner data scientist is the Titanic Problem 
-
-https://www.kaggle.com/c/titanic
+A good tabular dataset for a beginner data scientist is the [Titanic Kaggle Competition](https://www.kaggle.com/c/titanic)
 
 These problems are known as binary classification problems as the outcome is 1 or 0.  We can also build models to predict discrete continuous numbers.  If we started out from this dataset, we could train the model to predict the premium.  This type of problem is called a regression problem.
 
@@ -69,7 +67,7 @@ The final type of tabular data problem we’ll look at is the multiclass problem
 
 ![output]({{ site.url }}{{ site.baseurl }}/images/tabular-multiclass.png)
 
-##How Does Machine Learning Work?
+## How Does Machine Learning Work?
 
 The backbone of AI is basically math. Specifically, Calculus, Linear Algebra, Probability and Statistics.  So firstly all data whether it is visual, audio or tabular must be converted entirely into numbers.  Here’s an example showing how a greyscale image of a handwritten digit 8 is converted into numbers.
 
@@ -83,29 +81,23 @@ As the model trains it is basically nudging weights and biases around to minimis
 
 Despite the complexity under the hood Python libraries such as Google’s Tensorflow and Facebook’s PyTorch make it possible for anyone to build deep learning machine learning models. 
 
-##Text Data
+## Text Data (Natural Language Processing)
 
-We haven’t yet looked at text data.  Computers are great at storing text data but they don’t ‘understand’ it as such.  This is starting to change. We can now relatively easily train machine learning models to recognize the sentiment of text.  Probably the most famous dataset often used by newbies is the IMDB movie reviews dataset. This dataset is contains over 50,000 reviews. Each review has been manually labelled as a positive or negative review. If we train a machine learning model of this data we can take a new review and work out if it is positive or negative.
+We haven’t yet looked at text data.  Computers are great at storing text data but they don’t ‘understand’ it as such.  This is starting to change. We can now relatively easily train machine learning models to recognize the sentiment of text.  Probably the most famous dataset used by newbies is the IMDB movie reviews dataset. This dataset is contains over 50,000 reviews. Each review has been manually labelled as a positive or negative review. If we train a machine learning model of this data we can take a new review and work out if it is positive or negative.
 
-The Tensor Flow embedding projector is a cool way to introduce the concept of Word Embeddings. After training a model on the IMDB data set we can visually see how the model has determined what works might lean towards positive and those that might lean towards negative.
+The [Tensor Flow embedding projector](https://projector.tensorflow.org/) is a cool way to introduce the concept of Word Embeddings. After training a model on the IMDB data set we can visually see how the model has determined what workd might lean towards positive and those that might lean towards negative.
 
-https://projector.tensorflow.org/
+Pre-trained word embeddings can greatly improve the accuracy of text based machine learning problems are freely available to use from Google (Word2Vec), Facebook (FASText) and Stanford University (GloVe). I wrote a ‘fun’ article called [Word Embedding with Dracula](https://spcman.github.io/getting-to-know-julia/nlp/word-embeddings/) on my blog.
 
-Pre-trained word embeddings are freely available to use from Google (Word2Vec), Facebook (FASText). I wrote a ‘fun’ study of the GloVe word embeddings.  This data set was trained on Wikipiedia text by Stanford University.
-
-https://spcman.github.io/getting-to-know-julia/nlp/word-embeddings/
-
-Example using text data are SPAM detectors and the automatic detection of social media posts to see if they are abusive in some way or not.
+Other example using text data are SPAM detectors and the automatic detection of social media posts to see if they are abusive in some way or not.
 
 Work related projects
 
-Project 1 : Can we use the subject and note text to predict the correct note type and sub type of notes not seen in the training process? 
+*Project 1 : Can we use the subject and note text to predict the correct note type and sub type of notes not seen in the training process?* 
 
 Data is real but has been anonymized.
 
-Project 2: The second work related note book was written in Julia. It’s not machine learning such, but more a look at monte-carlo simulation on portfolios using risk profiles similar to ours.
-
-https://spcman.github.io/getting-to-know-julia/monte%20carlo/monte-carlo-investment-earnings/
+*[Project 2](https://spcman.github.io/getting-to-know-julia/monte%20carlo/monte-carlo-investment-earnings/): The second work related note book was written in Julia. It’s not machine learning such, but more a look at monte-carlo simulation on portfolios using risk profiles similar to ours.*
 
 ## Where are we heading?
 
