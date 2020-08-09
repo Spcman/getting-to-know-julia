@@ -178,7 +178,7 @@ closest(vec("wine"))
 
 ## Math on words
 
-### Water + Ice
+### Water + Frozen
 
 ```julia
 closest(vec("water") + vec("frozen"))
