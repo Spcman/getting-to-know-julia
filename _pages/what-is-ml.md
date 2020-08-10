@@ -28,7 +28,7 @@ Not that long ago some scientists thought a computer could never distinguish ima
 
 {% include video id="MPU2HistivI" provider="youtube" %}
 
-Other vision machine learning examples are facial recognition, medical diagnosis, self-driving cars, inspecting sites from drones, law enforcement (Clearview AI), 
+Other vision machine learning examples are facial recognition, medical diagnosis, self-driving cars, inspecting sites from drones, law enforcement (Clearview AI).
 
 ### Audio
 
@@ -120,7 +120,7 @@ Aside from the obvious ‘Terminator’ scenario, deep fakes videos are relative
 
 ## Machine Learning in my business
 
-I recently stumbled on this talk by Andrew Ng.  I did his brilliant course on Machine Learning a while ago.  He explains how now may be the time to try out some use-cases in your own business.
+Aimed at business execs, Andrew Ng did this talk suggesting that now is the time for businesses to start looking at AI use-cases to gain competative advantage.  I did Andrew's brilliant course on Machine Learning a while ago.
 
 {% include video id="j2nGxw8sKYU" provider="youtube" %}
 
