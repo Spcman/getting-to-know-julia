@@ -38,6 +38,8 @@ This example show’s an AI assistant (Google Duplex) booking an appointment and
 
 {% include video id="lXUQ-DdSDoE" provider="youtube" %}
 
+0:55
+
 Not my work but there is now a trained machine learning model that can be used to take any song as an mp3 and split it into two new audio files, one being the instrumental and the other being the vocals.  The model can be used for free in my preferred development environment Google Colab. 
 
 ### Recommendation Systems 
@@ -52,7 +54,7 @@ Tabular data is basically spreadsheet data.  To build a machine learning model f
 
 To ‘train’ the machine learning model you need as many examples as possible.  The features should be relevant to the outcome that you’re trying to predict.
 
-The outcome will be a mathematical ‘model’ that can make new predictions based on data it hasn’t seen before.
+The outcome will be a mathematical ‘model’ that can make new predictions on new data rows it hasn’t seen before.
 
 ![output]({{ site.url }}{{ site.baseurl }}/images/tabular-model-new-prediction.png)
 
