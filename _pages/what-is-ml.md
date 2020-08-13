@@ -18,6 +18,11 @@ Here’s a picture to help explain where machine learning lies with relation to 
 
 There’s no need to worry about these for now, you’ll pick them up if you choose to dig deeper into machine learning.
 
+## Machine Learning can be traced back to 1959, why is AI taking off right now?
+
+  * Copious amounts of data
+  * Computing power
+
 ## What is machine learning is used for?
 
 Machine learning is currently limited to fairly narrow tasks. Here are a few applications of machine learning.
