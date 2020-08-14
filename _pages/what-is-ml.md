@@ -118,7 +118,7 @@ Despite the complexity under the hood Python libraries such as Google’s Tensor
 
 ## Text Data (Natural Language Processing)
 
-We haven’t yet looked at text data.  Computers are great at storing text data but they don’t ‘understand’ it as such.  This is starting to change. We can now relatively easily train machine learning models to recognize the sentiment of text.  Probably the most famous dataset used by newbies is the IMDB movie reviews dataset. This dataset contains over 50,000 reviews. Each review has been manually labelled as a positive or negative review. If we train a machine learning model on this data we can take a new review and work out if it is positive or negative.
+We haven’t yet looked at text data.  Computers are great at storing text data but they don’t ‘understand’ it as such. We can now relatively easily train machine learning models to recognize the sentiment of text.  Probably the most famous dataset used by newbies for this task is the IMDB movie reviews dataset. This dataset contains over 50,000 reviews. Each review has been manually labelled as a positive or negative review. If we train a machine learning model on this data we can take a new review and work out if it is positive or negative.
 
 The [Tensor Flow embedding projector](https://projector.tensorflow.org/) is a cool way to introduce the concept of Word Embeddings. After training a model on the IMDB data set we can visually see how the model has determined what words might lean towards positive and those that might lean towards negative.
 
