@@ -24,7 +24,7 @@ There’s no need to worry about these for now, you’ll pick them up if you cho
 #myDIV {
   width: 100%;
   padding: 50px 0;
-  text-align: center;
+  text-align: left;
   background-color: lightblue;
   margin-top: 20px;
 }
@@ -36,8 +36,10 @@ There’s no need to worry about these for now, you’ll pick them up if you cho
 	<ul>
 		<li>Copious amounts of data</li>
 		<li>Computing power</li>
-	</ul>uk>
+	</ul>
 </div>
+
+document.getElementById("myDiv").style.display = "none";
 
 <script>
 function myFunction() {
