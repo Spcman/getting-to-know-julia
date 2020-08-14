@@ -22,6 +22,7 @@ There’s no need to worry about these for now, you’ll pick them up if you cho
 
 <style>
 #myDIV {
+  display: "none"
   width: 100%;
   padding: 50px 0;
   text-align: left;
@@ -30,7 +31,7 @@ There’s no need to worry about these for now, you’ll pick them up if you cho
 }
 </style>
 
-<button onclick="myFunction()">Reveal Answer</button>
+<button onclick="myFunction()">Reveal Answers</button>
 
 <div id="myDIV">
 	<ul>
@@ -38,8 +39,6 @@ There’s no need to worry about these for now, you’ll pick them up if you cho
 		<li>Computing power</li>
 	</ul>
 </div>
-
-document.getElementById("myDiv").style.display = "none";
 
 <script>
 function myFunction() {
