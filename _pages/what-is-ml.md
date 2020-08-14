@@ -22,18 +22,18 @@ There’s no need to worry about these for now, you’ll pick them up if you cho
 
 <style>
 #myDIV {
-  display: "none"
   width: 100%;
-  padding: 50px 0;
+  padding: 10px 0;
   text-align: left;
   background-color: lightblue;
   margin-top: 20px;
+  display: none;
 }
 </style>
 
 <button onclick="myFunction()">Reveal Answers</button>
 
-<div id="myDIV">
+<div id="myDIV"; display: none>
 	<ul>
 		<li>Copious amounts of data</li>
 		<li>Computing power</li>
