@@ -104,7 +104,7 @@ The final type of tabular data problem we’ll look at is the multiclass problem
 
 ## How Does Machine Learning Work?
 
-The backbone of AI is basically math. Specifically, Calculus, Linear Algebra, Probability and Statistics.  So firstly all data whether it is visual, audio or tabular must be converted entirely into numbers.  Let's say we were teaching the computer how to recognise hand-written digits.  Here’s an example showing how a greyscale image of '8' is converted into numbers.
+The backbone of AI is basically math. Specifically, Calculus, Linear Algebra, Probability and Statistics.  So firstly all data whether it is visual, audio or tabular must be converted entirely into numbers.  Let's say we were teaching the computer how to recognise hand-written digits.  Here’s how we would convert the greyscale image '8' into numbers.
 
 ![output]({{ site.url }}{{ site.baseurl }}/images/mnist-digit-8.png)
 
