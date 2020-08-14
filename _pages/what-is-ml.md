@@ -33,8 +33,10 @@ There’s no need to worry about these for now, you’ll pick them up if you cho
 <button onclick="myFunction()">Reveal Answer</button>
 
 <div id="myDIV">
-Copious amounts of data
-Computing powerThis is my DIV element.
+	<ul>
+		<li>Copious amounts of data</li>
+		<li>Computing power</li>
+	</ul>uk>
 </div>
 
 <script>
