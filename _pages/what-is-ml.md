@@ -20,34 +20,33 @@ There’s no need to worry about these for now, you’ll pick them up if you cho
 
 ## Machine Learning can be traced back to 1959, why is AI taking off right now?
 
----
-output: html_document
----
-
-```{css, echo=FALSE}
-.spoiler {
-  visibility: hidden;
+<style>
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
 }
+</style>
 
-.spoiler::before {
-  visibility: visible;
-  content: "Spoiler alert! Hover me to see the answer."
+<button onclick="myFunction()">Reveal Answer</button>
+
+<div id="myDIV">
+Copious amounts of data
+Computing powerThis is my DIV element.
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
-
-.spoiler:hover {
-  visibility: visible;
-}
-
-.spoiler:hover::before {
-  display: none;
-}
-```
-
-You can insert a message in raw `HTML`:
-<p class="spoiler">Answer</p>
-
-A better approach is to use bracketed spans:  
-[This is another answer]{.spoiler}
+</script>
 
 
 ## What is machine learning is used for?
