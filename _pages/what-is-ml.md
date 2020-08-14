@@ -33,7 +33,7 @@ There’s no need to worry about these for now, you’ll pick them up if you cho
 
 <button onclick="myFunction()">Reveal Answers</button>
 
-<div id="myDIV"; display: none>
+<div id="myDIV">
 	<ul>
 		<li>Copious amounts of data</li>
 		<li>Computing power</li>
