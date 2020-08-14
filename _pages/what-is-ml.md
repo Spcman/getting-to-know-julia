@@ -20,8 +20,34 @@ There’s no need to worry about these for now, you’ll pick them up if you cho
 
 ## Machine Learning can be traced back to 1959, why is AI taking off right now?
 
+<style>
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+</style>
+
+<button onclick="myFunction()">Reveal Answer</button>
+
+<div id="myDIV">
   * Copious amounts of data
-  * Computing power
+  * Computing powerThis is my DIV element.
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
 
 ## What is machine learning is used for?
 
