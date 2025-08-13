@@ -1,0 +1,7 @@
+version: 2
+updates:
+  - package-ecosystem: "bundler"
+    directory: "/"
+    schedule:
+      interval: "weekly"   # daily/weekly/monthly are valid
+    open-pull-requests-limit: 5
